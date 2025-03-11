@@ -1,0 +1,21 @@
+{
+  "name": "untangled-kit",
+  "version": "0.0.1",
+  "description": "Untangled Kit",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cowprotocol/cow-sdk": "^5.10.1-RC.0",
+    "@morpho-org/bundler-sdk-ethers": "^1.0.3",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@types/axios": "^0.14.4",
+    "axios": "^1.8.2",
+    "ethers": "^6.13.5",
+    "typechain": "^8.3.2"
+  }
+}
