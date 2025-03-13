@@ -19,14 +19,15 @@ export async function swapTokenFor(
 export async function getMarketFromToken(
   token: `0x${string}`,
   chainId: number
-): Promise<`0x${string}`> {
+): Promise<string> {
   return await axios
     .get(`https://api-v2.pendle.finance/core/v1/${chainId}/markets/active`)
-    .then((res) =>
-      res.data.markets.find(
-        (m: any) =>
-          m.pt === chainId + "-" + token.toLowerCase() ||
-          m.pt === chainId + "-" + token.toLowerCase()
-      )
+    .then(
+      (res) =>
+        res.data.markets.find(
+          (m: any) =>
+            m.pt === chainId + "-" + token.toLowerCase() ||
+            m.pt === chainId + "-" + token.toLowerCase()
+        ).address
     );
 }

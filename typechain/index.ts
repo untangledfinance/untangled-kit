@@ -3,6 +3,7 @@
 /* eslint-disable */
 export type { AaveV3Pool } from "./AaveV3Pool";
 export type { CowSettlement } from "./CowSettlement";
+export type { ERC20 } from "./ERC20";
 export type { MetaMorpho } from "./MetaMorpho";
 export type { MorphoBlue } from "./MorphoBlue";
 export type { MorphoBundler } from "./MorphoBundler";
@@ -13,6 +14,7 @@ export type { TokenMessager } from "./TokenMessager";
 export * as factories from "./factories";
 export { AaveV3Pool__factory } from "./factories/AaveV3Pool__factory";
 export { CowSettlement__factory } from "./factories/CowSettlement__factory";
+export { ERC20__factory } from "./factories/ERC20__factory";
 export { MetaMorpho__factory } from "./factories/MetaMorpho__factory";
 export { MorphoBlue__factory } from "./factories/MorphoBlue__factory";
 export { MorphoBundler__factory } from "./factories/MorphoBundler__factory";

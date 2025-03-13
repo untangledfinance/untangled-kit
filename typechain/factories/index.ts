@@ -3,6 +3,7 @@
 /* eslint-disable */
 export { AaveV3Pool__factory } from "./AaveV3Pool__factory";
 export { CowSettlement__factory } from "./CowSettlement__factory";
+export { ERC20__factory } from "./ERC20__factory";
 export { MetaMorpho__factory } from "./MetaMorpho__factory";
 export { MorphoBlue__factory } from "./MorphoBlue__factory";
 export { MorphoBundler__factory } from "./MorphoBundler__factory";
