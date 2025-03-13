@@ -1,4 +1,4 @@
-import { BytesLike } from "ethers";
+import { BytesLike, ethers } from "ethers";
 import axios from "axios";
 export async function swapTokenFor(
   receiver: `0x${string}`,
@@ -14,4 +14,19 @@ export async function swapTokenFor(
 `
     )
     .then((res) => res.data.tx.data);
+}
+
+export async function getMarketFromToken(
+  token: `0x${string}`,
+  chainId: number
+): Promise<`0x${string}`> {
+  return await axios
+    .get(`https://api-v2.pendle.finance/core/v1/${chainId}/markets/active`)
+    .then((res) =>
+      res.data.markets.find(
+        (m: any) =>
+          m.pt === chainId + "-" + token.toLowerCase() ||
+          m.pt === chainId + "-" + token.toLowerCase()
+      )
+    );
 }
